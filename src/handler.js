@@ -6,12 +6,6 @@ const getMessage = (request, h) => {
     response.code(200)
     return response
 
-  /* const response = h.response({
-    message: "message not found"
-  })
-
-  response.code(404)
-  return response */
 }
 
 const postMessage = (request,h) => {

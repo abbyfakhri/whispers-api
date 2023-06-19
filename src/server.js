@@ -1,10 +1,11 @@
 const routes = require('./routes');
 const Hapi = require('@hapi/hapi');
 const H2o2 = require('@hapi/h2o2');
+require('dotenv').config();
 
 const server = Hapi.server({
   host: 'localhost',
-  port: 3000,
+  port: process.env.PORT,
   routes: {
     cors: {
       origin: ['*'],
